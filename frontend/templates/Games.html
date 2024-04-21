@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>TOMMORROW_LAND</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--enable mobile device-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--fontawesome css-->
+      <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+      <!--bootstrap css-->
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+      <!--animate css-->
+      <link rel="stylesheet" href="{% static 'css/animate-wow.css' %}">
+      <!--main css-->
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/slick.min.css' %}">
+      <!--responsive css-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+   </head>
+   <body>
+      <header id="header" class="top-head">
+         <!-- Static navbar -->
+         <div class="col-md-4 col-sm-12 left-rs">
+            <a href="/" class="logoimage">TOMMORROW_LAND</a>
+      </div>
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <div class="row">
+
+                  <div class="col-md-8 col-sm-12">
+                        <div class="nav-b hidden-xs">
+                           <div class="nav-box">
+                              <ul>
+                                 <li><a href="/"> Homepage </a></li>
+                                 <li><a href="/Categories">Categories</a></li>
+                                 <li><a href="/Opinion">About us</a></li>
+                              </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--/.container-fluid --> 
+         </nav>   
+      </header>
+      <!-- Modal -->
+
+
+
+      
+
+      <div class="products">
+         <div class="main-products">
+            <h2>SEE THE PRODUCTS</h2>
+               <div class="prod-box">
+                  {% for n in key %}
+                  <div class="prod-i">
+                     <img src="{% static 'images\product\startfield1.jpg' %}" alt="#" />
+                  </div>
+                  <br>
+                  <div class="prod-i">
+                     <img src="{% static 'images\product\startfield2.jpg' %}" alt="#" />
+                  </div>
+                  <br>
+                  <div class="prod-i">
+                     <img src="{% static 'images\product\startfield3.png' %}" alt="#" />
+                  </div>
+                  <br>
+                  <div class="prod-i">
+                     <img src="{% static 'images\product\startfield4.jpg' %}" alt="#" />
+                  </div>
+                  <br>
+                  <!-- <div class="prod-i">
+                     <img src="{% static 'images\product\startfield5.jpg' %}" alt="#" />
+                  </div> -->
+                  <br>
+                  <div class="prod-dit clearfix">
+                     <div class="dit-t clearfix">
+                        <div class="left-ti">
+                           <h4>Name:{{n.game_name}}</h4>
+                           <p>Genre:{{n.game_Genre}}<br>Description:{{n.game_desc}}</p>
+                        </div>
+                        <a href="https://bethesda.net/en/game/starfield">More info</a>
+                     </div>
+                  </div>
+                  {% endfor %}
+         </div>   
+      </div>
+
+
+      <!-- <div class="furniture-box">
+         <div class="container">
+            <div class="row">
+               <div class="furniture-main">    
+                  <div class="loding-box">
+                     <a href="#">
+                        <div class="sk-wave">
+                           <div class="sk-rect sk-rect1"></div>
+                           <div class="sk-rect sk-rect2"></div>
+                           <div class="sk-rect sk-rect3"></div>
+                           <div class="sk-rect sk-rect4"></div>
+                           <div class="sk-rect sk-rect5"></div>
+                        </div>
+                        <span>Loding more awesome products...</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> -->
+
+
+
+
+      
+
+
+
+
+
+
+
+
+      <footer>
+
+         <div class="main-footer">
+            <div class="container">
+               <div class="row">
+                  <div class="footer-top clearfix">
+   
+                     <center>
+                        <h2> Contact Us </h2>
+                     </center><br><br>
+                     <ul class="list-inline socials">
+                        <li>
+                           <a href="https://www.facebook.com/jonel.mathew">
+                              <i class="fa fa-facebook" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                              <i class="fa fa-twitter" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://instagram.com/jonelmathew?igshid=MDM4ZDc5MmU=">
+                              <i class="fa fa-instagram" aria-hidden="true"></i>
+                           </a>
+                        </li>
+   
+                     </ul>
+   
+                  </div>
+                  <div class="footer-link-box clearfix">
+                     <div class="col-md-6 col-sm-6">
+                        <div class="left-f-box">
+                           <div class="col-sm-4">
+                              <h2>ENTERTAINMENT</h2>
+                              <ul>
+                                 <li><a href="https://tubitv.com/">Movies</a></li>
+                                 <li><a href="https://www.projectfreetv.cyou/">Shows</a></li>
+                                 <li><a href="https://www.youtube.com/">Web Series</a></li>
+                                 <li><a href="https://www.toonjet.com/">Cartoons</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-sm-4">
+                              <h2>GAMES</h2>
+                              <ul>
+                                 <li><a href="https://store.epicgames.com/en-US/">Desktop Games</a></li>
+                                 <li><a href="https://www.purexbox.com/">XBOX games</a></li>
+                                 <li><a href="https://www.g2a.com/top-list/playstation-games">PS Games</a></li>
+                                 <li><a href="https://www.apkmirror.com/">Android/ios games</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-sm-4">
+                              <h2>AUTOMOBILES</h2>
+                              <ul>
+                                 <li><a href="https://ackodrive.com/">Cars</a></li>
+                                 <li><a href="https://www.bikewale.com/">Motorcycles</a></li>
+                                 <li><a href="https://www.zigwheels.com/">Sprorts-Bikes</a></li>
+                                 <li><a href="https://trucks.cardekho.com/">Trailers</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-sm-6">
+                        <div class="right-f-box">
+                           <div class="col-sm-4">
+                              <h2>ELECTRONICS</h2>
+                              <ul>
+                                 <li><a href="https://www.laptopstoreindia.com/">Laptops/Desktops</a></li>
+                                 <li><a href="https://www.croma.com/home-appliances/c/5">Home Appliances</a></li>
+                                 <li><a href="https://www.shakedeal.com/garage-tools-hand-tools-lp2">Garage Tools</a></li>
+                                 <li><a href="https://bazaar.shopclues.com/smart-gadgets.html">Smart-Gadgets</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-sm-4">
+                              <h2>ANIMES</h2>
+                              <ul>
+                                 <li><a href="https://myanimelist.net/anime/producer/56/A-1_Pictures">A1 Studios</a></li>
+                                 <li><a href="https://www.mappa.co.jp/en/">MAPPA</a></li>
+                                 <li><a href="https://www.bones.co.jp/">Studio Bones</a></li>
+                                 <li><a href="http://www.ufotable.com/">Ufotable</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-sm-4">
+                              <h2>TECHNOLOGIES</h2>
+                              <ul>
+                                 <li><a href="https://www.tesla.com/">Tesla</a></li>
+                                 <li><a href="https://www.apple.com/in/">Apple Inc.</a></li>
+                                 <li><a href="https://www.microsoft.com/en-in/">Microsoft</a></li>
+                                 <li><a href="https://abc.xyz/">ALPHABATE</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               </center>
+      </footer>
+      <!--main js--> 
+      <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script> 
+      <!--bootstrap js--> 
+      <script src="{% static 'js/bootstrap.min.js' %}"></script> 
+      <script src="{% static 'js/bootstrap-select.min.js' %}"></script>
+      <script src="{% static 'js/slick.min.js' %}"></script> 
+      <script src="{% static 'js/jquery-ui.js' %}"></script> 
+      <script src="{% static 'js/wow.min.js' %}"></script>
+      <!--custom js--> 
+      <script src="{% static 'js/custom.js' %}"></script>
+      <script>
+         $( function() {
+         	$( "#slider-range" ).slider({
+         		range: true,
+         		min: 0,
+         		max: 2000,
+         		values: [ 158, 1230 ],
+         		slide: function( event, ui ) {
+         			$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+         		}
+         	});
+         	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+         		" - $" + $( "#slider-range" ).slider( "values", 1 ) );
+         } );
+      </script>
+      <script src="js/jquery.nicescroll.min.js"></script> 
+      <script>
+         $(document).ready(function() {
+           $("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#ededed",boxzoom:true}); // First scrollable DIV
+         });
+      </script>
+   </body>
+</html>

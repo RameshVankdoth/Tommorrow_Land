@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>TOMMORROW_LAND</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!--enable mobile device-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--fontawesome css-->
+   <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+   <!--bootstrap css-->
+   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   <!--animate css-->
+   <link rel="stylesheet" href="{% static 'css/animate-wow.css' %}">
+   <!--main css-->
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/slick.min.css' %}">
+   <!--responsive css-->
+   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+
+<body>
+   <header id="header" class="top-head">
+      <!-- Static navbar -->
+      <div class="col-md-4 col-sm-12 left-rs">
+         <a href="/" class="logoimage">TOMMORROW_LAND</a>
+      </div>
+      <nav class="navbar navbar-default">
+         <div class="container-fluid">
+            <div class="row">
+
+               <div class="col-md-8 col-sm-12">
+                  <div class="nav-b hidden-xs">
+                     <div class="nav-box">
+                        <ul>
+                           <li><a href="/"> Homepage </a></li>
+                           <li><a href="/Categories">Categories</a></li>
+                           <li><a href="/Opinion">About us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--/.container-fluid -->
+      </nav>
+   </header>
+   <!-- Modal -->
+   <div class="page-content-product">
+      <div class="main-product">
+         <div class="container">
+            <div class="row clearfix">
+               <div class="find-box">
+                  <h1>WELCOME TO <br> TOMMORROW_LAND</h1>
+                  <h4>Lets see what you have in mind.</h4>
+                  <div class="product-sh">
+                     <div class="col-sm-6">
+                     </div>
+                     <div class="col-sm-3">
+                        <div class="form-sh">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row clearfix">
+               {% for n in key %}
+               <div class="col-lg-3 col-sm-6 col-md-3">
+                  <a href="{{n.Prod_name}}">
+                     <div class="box-img">
+                        <h4>{{n.Prod_name}}</h4>
+                        <img src="media/{{n.prod_image}}" alt="" />
+                     </div>
+                  </a>
+               </div>
+               {% endfor %}
+               <div class="categories_link">
+                  <a href="/Categories">Browse all categories here</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="cat-main-box">
+      <div class="container">
+         <div class="row panel-row">
+            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.0s">
+               <div class="panel panel-default">
+                  <div class="panel-body">
+                     <img src="{% static 'images/xpann-icon.jpg' %}" class="icon-small" alt="">
+                     <h4>UFO in business</h4>
+                     <p>Expand your thoughts and opinions.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+               <div class="panel panel-default">
+                  <div class="panel-body">
+                     <img src="{% static 'images/create-icon.jpg'%}     " class="icon-small" alt="">
+                     <h4>Develop and add</h4>
+                     <p>Wait for the poeple to share there thoughts
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wow fadeIn hidden-sm" data-wow-delay="0.4s">
+               <div class="panel panel-default">
+                  <div class="panel-body">
+                     <img src="{% static 'images/get-icon.jpg'%}     " class="icon-small" alt="">
+                     <h4>Recreate things</h4>
+                     <p>According to the opinions and thoughts recreate things.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr>
+   <div class="products_exciting_box">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+               <div class="exciting_box f_pd">
+                  <img src="{% static 'images/exciting_img-01.jpg' %}" class="icon-small" alt="" />
+                  <h4>Explore diffrent types of things here...
+                  </h4>
+                  <p>It may be related to Entertainment, vehicles, Electronics, Games it doesn't matter
+                     as long as the products exists, they will be covered with complete honesty.
+                  </p>
+               </div>
+            </div>
+            <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+               <div class="exciting_box l_pd">
+                  <img src="{% static 'images/exciting_img-02.jpg' %}" class="icon-small" alt="" />
+                  <h4>List your products here, you can be assuared about the analysis report.
+                     </p>
+               </div>
+            </div>
+         </div>
+         <hr>
+      </div>
+   </div>
+   <div class="start-free-box">
+      <div class="container">
+         <div class="row">
+            <div class="container">
+               <div class="main-start-box">
+                  <div class="free-box-a clearfix">
+                     <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="left-a-f">
+                           <h3>A common platform built for buyers and manufacturers.</h3>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="right-a-f">
+                           <p>We are trying to close the gap between all kinds of developers
+                              with normal audiance. They can share their thoughts with ddevelopers
+                              so that they can also consider the facts and apply them to increase
+                              the effectiiveness in the system.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- <div class="row">
+            <div class="main-start-box">
+               <div class="bg_img_left">
+                  <img src="{% static 'images/zoozoo.png' %}" alt="#" />
+               </div> -->
+               <div class="container">
+                  <!-- <div class="buyer-box clearfix">
+                     <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                        <div class="left-buyer">
+                           <img class="img-responsive" src="{% static 'images/creat_pro.png' %}" alt="#" />
+                        </div>
+                     </div> >
+                     <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="right-buyer">
+                           <h1>USER OPINION</h1>
+                           <h2>Gives rise to innovation<br>
+                           </h2>
+                           <p>One can share there opinions about the product without any hindrance.
+                              Opinions or surveys can help manufacturers to think abiut their products
+                              once again or be happy with the resuts.
+                           </p>
+                        </div>
+                     </div>
+                  </div> -->
+               </div>
+            <!-- </div>
+         </div>
+         <div class="row">
+            <div class="bg_img_right">
+               <img src="{% static 'images/left_image.png' %}" alt="#" />
+            </div>
+            <div class="main-start-box"> -->
+               <div class="container">
+                  <!-- <div class="supplier clearfix">
+                     <div class="col-md-5 col-sm-6">
+                        <div class="left-supplier">
+                           <h1>DEVELOPERS </h1>
+                           <br><br>
+                           <h2>Increase Productivity and quality...<br></h2>
+                           <p>One should not worry about their negative reputation, if you work hard and create
+                              quality products with good reviews, any company can get their desired output.
+                              The opinions will help them to grow according to the people or buyers.
+                           </p>
+                        </div>
+                     </div> >
+                     <div class="col-md-7 col-sm-6">
+                        <div class="right-supplier">
+                           <img class="img-responsive" src="{% static 'images/supplier-pc-img.png'%}" alt="#" />
+                        </div>
+                     </div>
+                  </div> -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <footer>
+
+      <div class="main-footer">
+         <div class="container">
+            <div class="row">
+               <div class="footer-top clearfix">
+                  <br>
+                  <br>
+                  <center>
+                     <h2> Contact Us </h2>
+                  </center><br><br>
+                  <ul class="list-inline socials">
+                     <li>
+                        <a href="https://www.facebook.com/jonel.mathew">
+                           <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                           <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://instagram.com/jonelmathew?igshid=MDM4ZDc5MmU=">
+                           <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                     </li>
+
+                  </ul>
+
+               </div>
+               <div class="footer-link-box clearfix">
+                  <div class="col-md-6 col-sm-6">
+                     <div class="left-f-box">
+                        <div class="col-sm-4">
+                           <h2>ENTERTAINMENT</h2>
+                           <ul>
+                              <li><a href="https://tubitv.com/">Movies</a></li>
+                              <li><a href="https://www.projectfreetv.cyou/">Shows</a></li>
+                              <li><a href="https://www.youtube.com/">Web Series</a></li>
+                              <li><a href="https://www.toonjet.com/">Cartoons</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-sm-4">
+                           <h2>GAMES</h2>
+                           <ul>
+                              <li><a href="https://store.epicgames.com/en-US/">Desktop Games</a></li>
+                              <li><a href="https://www.purexbox.com/">XBOX games</a></li>
+                              <li><a href="https://www.g2a.com/top-list/playstation-games">PS Games</a></li>
+                              <li><a href="https://www.apkmirror.com/">Android/ios games</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-sm-4">
+                           <h2>AUTOMOBILES</h2>
+                           <ul>
+                              <li><a href="https://ackodrive.com/">Cars</a></li>
+                              <li><a href="https://www.bikewale.com/">Motorcycles</a></li>
+                              <li><a href="https://www.zigwheels.com/">Sprorts-Bikes</a></li>
+                              <li><a href="https://trucks.cardekho.com/">Trailers</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                     <div class="right-f-box">
+                        <div class="col-sm-4">
+                           <h2>ELECTRONICS</h2>
+                           <ul>
+                              <li><a href="https://www.laptopstoreindia.com/">Laptops/Desktops</a></li>
+                              <li><a href="https://www.croma.com/home-appliances/c/5">Home Appliances</a></li>
+                              <li><a href="https://www.shakedeal.com/garage-tools-hand-tools-lp2">Garage Tools</a></li>
+                              <li><a href="https://bazaar.shopclues.com/smart-gadgets.html">Smart-Gadgets</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-sm-4">
+                           <h2>ANIMES</h2>
+                           <ul>
+                              <li><a href="https://myanimelist.net/anime/producer/56/A-1_Pictures">A1 Studios</a></li>
+                              <li><a href="https://www.mappa.co.jp/en/">MAPPA</a></li>
+                              <li><a href="https://www.bones.co.jp/">Studio Bones</a></li>
+                              <li><a href="http://www.ufotable.com/">Ufotable</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-sm-4">
+                           <h2>TECHNOLOGIES</h2>
+                           <ul>
+                              <li><a href="https://www.tesla.com/">Tesla</a></li>
+                              <li><a href="https://www.apple.com/in/">Apple Inc.</a></li>
+                              <li><a href="https://www.microsoft.com/en-in/">Microsoft</a></li>
+                              <li><a href="https://abc.xyz/">ALPHABATE</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </center>
+   </footer>
+   <!--main js-->
+   <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+   <!--bootstrap js-->
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap-select.min.js' %}"></script>
+   <script src="{% static 'js/slick.min.js' %}"></script>
+   <script src="{% static 'js/wow.min.js' %}"></script>
+   <!--custom js-->
+   <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>
